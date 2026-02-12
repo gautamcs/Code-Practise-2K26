@@ -2489,3 +2489,21 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-02-12 23:11:48.982
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-02-12 23:11:48.985
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-02-12 23:11:48.986
+!MESSAGE buffering callback sts4.classpath.esCXZgNA Stream-API false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-02-12 23:11:48.989
+!MESSAGE executing callback sts4.classpath.esCXZgNA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2026-02-12 23:11:49.045
+!MESSAGE executing callback sts4.classpath.esCXZgNA SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2026-02-12 23:11:58.679
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
