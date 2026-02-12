@@ -19,7 +19,7 @@ public class Address {
 //	}
 
 	public String getCity() {
-		return city;
+		return city; 
 	}
 
 	public void setCity(String city) {
