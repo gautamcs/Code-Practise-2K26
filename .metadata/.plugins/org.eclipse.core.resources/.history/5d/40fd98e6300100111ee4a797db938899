@@ -1,0 +1,91 @@
+package com.gautam.model;
+
+public class Address {
+	
+	private String city; 
+	private String state; 
+	private int pinCode; 
+	private String country;
+	
+	public Address(String city, String state, int pinCode, String country) {
+		this.city = city; 
+		this.state = state; 
+		this.pinCode = pinCode;
+		this.country = country;
+	}
+	
+	public Address(Address address) {
+		this(address.getCity(), address.getState(), address.getPinCode())
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public int getPinCode() {
+		return pinCode;
+	}
+
+	public void setPinCode(int pinCode) {
+		this.pinCode = pinCode;
+	}
+	
+	public String getCountry( ) {
+		return country;
+	}
+	
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((city == null) ? 0 : city.hashCode());
+		result = prime * result + ((district == null) ? 0 : district.hashCode());
+		result = prime * result + pinCode;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Address other = (Address) obj;
+		if (city == null) {
+			if (other.city != null)
+				return false;
+		} else if (!city.equals(other.city))
+			return false;
+		if (district == null) {
+			if (other.district != null)
+				return false;
+		} else if (!district.equals(other.district))
+			return false;
+		if (pinCode != other.pinCode)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Address [city=" + city + ", district=" + district + ", pinCode=" + pinCode + ", Country: "+country+"]";
+	}
+	
+}
